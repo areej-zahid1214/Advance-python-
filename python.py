@@ -1,26 +1,25 @@
-# dic={
-#     "table":["A piece of Furniture","List of fact and figure"],
-#     "Cat": "A small animal"
-# }
-# print(dic)
+menu={
+   "pizza":3000,
+   "cold-drink":200,
+   "shuarma":650,
+   "burger":650,
+   "pasta":1500,
+}
+print(menu)
+total_bill=0
+n = int(input("how much order did you want? "))
 
+for i in range(1, n + 1):
+    order = input(f"Enter item {i}: ")
+if order in menu:
+    total_bill += menu[order]
+else:
+    print("Sorry, yeh item menu mein nahi hai!")
 
-
-# set={
-#     "python","java","C++","python","javascript","JAVA","python","java","C++","C"
-#     }
-# print(len(set))
-
-sub={}
-a=input("Enter your  1st subject")
-a1= input("Enter the marks")
-b=input("Enter your   2nd subject")
-b1= input("Enter the marks")
-c=input("Enter your  3rd subject")
-c1= input("Enter the marks")
-sub.update({
-a:a1,
-b:b1,
-c:c1
-})
-print(sub)
+if (total_bill>=1500):
+  total_bill=total_bill-(total_bill*0.10)
+  print("your bill with discount is ",total_bill)
+elif ( total_bill==0):
+    print(" Sorry!....There is no things in the order")
+else:
+    print("your bill is",total_bill)
