@@ -1,9 +1,12 @@
-tup=(67,44,65,23,55,67,35)
-i=1
-x=23
-while i<len(tup):
-    if tup[i]==x:
+# nums=[1,4,9,16,25,36,49,64,81,100]
+# for elmts in nums:
+#     print(elmts)
+
+
+nums=[1,4,9,16,25,36,49,64,81,100]
+x=36
+for i, elmts in nums:
+    if elmts==36:
         print("found",i)
-    else:
-        print("There is no number")
-    i+=1
+        break
+    print(elmts)
