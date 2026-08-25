@@ -1,12 +1,16 @@
-# nums=[1,4,9,16,25,36,49,64,81,100]
-# for elmts in nums:
-#     print(elmts)
+# list=["lahore","delhi","pakistan","multan"]
+# def len_cities(list):
+#     length=len(list)
+#     print(length)
+#     return(length)
+# len_cities(list)
 
 
-nums=[1,4,9,16,25,36,49,64,81,100]
-x=36
-for i, elmts in nums:
-    if elmts==36:
-        print("found",i)
-        break
-    print(elmts)
+def fac_concept():
+    num=int(input("Enter the no"))
+    fac=1
+    for i in range(1,num+1):
+        fac*=i
+        print( num,fac)
+fac_concept()
+        
