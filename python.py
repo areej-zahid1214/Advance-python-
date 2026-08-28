@@ -1,6 +1,7 @@
-def usd_toINR():
-    amount = int(input("Enter USD amount: "))
-    INR=83
-    converted_amount=amount*INR
-    print(converted_amount)
-usd_toINR()       
+def calcu_Sum(n):
+    if(n==0):
+        return 0
+    return calcu_Sum(n-1) +n
+sum=calcu_Sum(5)
+print(sum)
+    
